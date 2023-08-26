@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Delicious+Handrawn&family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+    background-color: black;
+    color: white;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.sidebar {
+    flex: 0.18;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    height: 100%;
+    margin-inline: 12px;
+    height: 100%;
+}
+
+.sidemain {
+    align-items: center;
+    justify-content: center;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid grey;
+
+}
+
+#main {
+    width: 80%;
+}
+
+.title {
+    color: white;
+}
+
+.subtitle {
+    color: red;
+}
+
+.head {
+    margin-top: 08px;
+    text-align: center;
+}
+
+#first {
+    text-align: center;
+}
+
+#second,
+#third {
+    padding-inline: 30px;
+}
+
+.maincontent {
+    flex: 1;
+    position: relative;
+    height: 100vh;
+    overflow-y: scroll !important;
+    
+
+}
+.maincontent::-webkit-scrollbar{
+    display: none !important;
+}
+
+.navbar {
+    background: #191D20;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 0.5rem;
+    position: sticky;
+    top: 0;
+}
+
+.searchbar {
+    border-radius: 0.3125rem;
+    background: #272A30;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    width: 80%;
+    height: 2.875rem;
+}
+
+#search-icon {
+    background-color: transparent !important;
+}
+
+#searchbox {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    margin-left: 4px;
+}
+
+.btns {
+    display: flex;
+    gap: 0.3rem;
+    background-color: transparent !important;
+    cursor: pointer;
+}
+
+.nav-btns {
+    background-color: #FF2424;
+    width: 08rem;
+    height: 2.875rem;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 0.235rem;
+
+}
+
+#favicon {
+    background-color: transparent !important;
+    height: 50px;
+    width: 50px;
+    padding-right: 10px;
+}
+
+.subcontent {
+    padding: 12px;
+}
+
+#hero {
+    width: 100%;
+}
+.mycards{
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.card {
+
+    border-radius: 0.625rem;
+    background: #191D20 !important;
+    overflow: hidden;
+}
+.cardimg{
+    width: 15rem;
+    height: 8rem;
+    border-radius: 0.625rem;
+}
+.cardtitle{
+    padding-inline: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #191D20 !important;
+}
+.cardtext1{
+    background: #191D20 !important;
+}
+.plus{
+    background-color: #878787;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    border-radius: 0.2rem;
+}
+
+@media screen and (max-width : 768px) {
+    .title, .subtitle{
+        font-size: 0.7rem;
+    }
+    .sidebar{
+        gap: 0rem;
+    }
+    .head{
+        font-size: 0.7rem;
+    }
+    li{
+        font-size: 0.7rem;
+    }
+    #second, #third{
+        padding-inline: 10px;
+    }
+}
+@media screen and (max-width : 425px) {
+    .btns{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-btns{
+        width: 3rem;
+        height: 1.575rem;
+    }
+    /* #favicon{
+        width: 25px;
+        height: 25px;
+    } */
+}
+.nav-btns:hover{
+    cursor: pointer;
+}
+.nav-btns:active{
+    color: skyblue;
+    background-color: aqua;
+}
+.searchbox:focus-visible{
+    outline: -webkit-focus-ring-color auto 0;
+}
